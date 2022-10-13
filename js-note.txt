@@ -1,0 +1,109 @@
+Commnet: //
+
+Data Type:
+undefined: a variable that has not been defined.
+null: nothing
+boolean:, string, number
+symbol: is an immutable primitive value that is uniqe 
+object: is key-value per.
+
+Variable: 
+var is use in hole program(global).
+let is just use in the specific scope.
+const it can't never change.
+
+Storing value with Assignment Operator:
+var a; -> declaring
+a = 11 -> Assign
+var b=11; -> Declar and Assign
+
+console.log(a) -> print(a) 
+
+Tip: we can use "+" and "+=" for adding two or more string.it is casesensetive.
+
+Working with Number:
+var sum = 10+10;
+var difference = 45-33;
+var product = 8*3;
+var quotient = 66/33;
+var remainder = 11%3; ->even and odd can be known.
+
+Working with String:
+var name = "ali";
+
+Scape a Quote:
+using \ will not count "" in the string and print all of them.
+'' this are work in js.
+
+++ -- += -= *= /= work in js.
+
+Finding length:
+var firstName = "Ada";
+firstName.length; -> .length give us the length of string or ...
+
+Cut or Indexing:
+var firstName = "Ada";
+index start from 0.
+firstLetterOfFirstName = firstName[0];
+string is immutable can't be change by one letter so need to be replace
+var a = "ali";
+a[0] = "o"; -> wrong
+a = "oli"; -> true
+
+Function:
+function wordBlanks(v1, v2, v3){
+	....
+	....
+}
+console.log(wordBlanks(v1, v2, v3));
+
+Array and nested Array -> no difference:
+adding and removing element to/from end of array with "push()" and "pop()" -> arrayname.push(element) ;  arrayname.pop()
+"shift()" -> remove the first element from array. arrayname.shift()
+"unshift()" -> add item to begining of array. arrayname.unshift(element)
+
+tip: 
+typeof variablename -> give variable type.
+function has return in js.
+
+queue is []. add to end with "push" and and extract from begining with "shift".
+
+= -> sign variable ; == -> convert type and compare ; === ->just compare No convert.
+!= -> convert type and compare ; !== ->just compare No convert.
+less and grater or than are the same(python).
+&& -> and Operator ; || -> or Operator
+
+if(){} ; else{} ; else if(){} ; 										 //	same output with swich statement:
+swich(element){                                                             swich(element){
+	case 1:																		case a:
+		.....																	case b:
+		break;																	case c:
+	case 2:																			answer = "low";
+		.....																		break;
+		break;																	case v:	
+	default:																	case r:
+		.....																		answer = "high";
+		break;																		breake;
+} -> case .1. will be compare to element in swich.							}
+
+Object: 
+are key-value(properties-value) just like python.
+call the key -> .keyname && [keyname]
+update the object -> object.keyname = newname
+add new key to object -> object.newkeyname = newkeyvalue ; object[newkeyname] = newkeyvalue
+delete key in object -> delete object.keyname
+
+tip:
+Object can be use instead of switch.
+object's key can test with "object.hasOwnProperty()" it would return boolean.
+
+
+While loop is just like python.
+for is like solidity.
+
+do{
+	....
+}while(....)   -> first run then check the condition.
+
+
+
