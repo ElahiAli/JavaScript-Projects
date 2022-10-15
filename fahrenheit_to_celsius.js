@@ -10,7 +10,7 @@ function makeClass(){
         }
 
         set temperature(updateTemp){
-            this._temp = updateTemp;
+            this._temp = 5/9 * (updateTemp - 32);
         }
     }
     return Thermostat;
