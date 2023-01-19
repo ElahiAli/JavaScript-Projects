@@ -1,1 +1,1 @@
-<a href="appImage.png"></a>
+<img src="appImage.png">
