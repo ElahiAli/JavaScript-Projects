@@ -20,3 +20,17 @@ button {
     cursor: pointer;
   
 }
+
+ul {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-top: 5px;
+}
+
+li a {
+    color: #5f9341;
+}
