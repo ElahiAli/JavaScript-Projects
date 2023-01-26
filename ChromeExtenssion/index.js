@@ -12,7 +12,12 @@ inputBtn.addEventListener("click", function () {
 function renderLeads() {
   let listItem = "";
   for (let i = 0; i < myLeads.length; i++) {
-    listItem += "<li>" + myLeads[i] + "</li>";
+    listItem += `
+      <li>
+        <a target='_black' href='${myLeads[i]}'>
+          ${myLeads[i]}
+        </a>
+      </li>`;
 
     // other way:
     // const li = document.createElement("li")
