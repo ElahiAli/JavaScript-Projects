@@ -5,6 +5,11 @@ const inputEl = document.getElementById("input-el");
 const inputBtn = document.getElementById("input-btn");
 const ulEl = document.getElementById("ul-el");
 
+// working with localStorage:
+// localStorage.setItem(key,value)
+// localStorage.getItem(key)
+// localStorage.clear();
+
 inputBtn.addEventListener("click", function () {
   myLeads.push(inputEl.value);
   inputEl.value = "";
