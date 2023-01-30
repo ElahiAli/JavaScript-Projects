@@ -14,32 +14,16 @@ let deleteBtn = document.getElementById("delete-btn");
 const leadFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
 if (leadFromLocalStorage) {
   myLeads = leadFromLocalStorage;
-  renderLeads();
+  render(myLeads);
 }
 
-deleteBtn.addEventListener("dblclick", function () {
-  localStorage.clear();
-  myLeads = [];
-  renderLeads();
-});
-
-inputBtn.addEventListener("click", function () {
-  myLeads.push(inputEl.value);
-  inputEl.value = "";
-  myValue = JSON.stringify(myLeads);
-  localStorage.setItem("myLeads", myValue);
-  renderLeads();
-
-  console.log(localStorage.getItem("myLeads"));
-});
-
-function renderLeads() {
+function render(leads) {
   let listItem = "";
-  for (let i = 0; i < myLeads.length; i++) {
+  for (let i = 0; i < leads.length; i++) {
     listItem += `
       <li>
-        <a target='_black' href='${myLeads[i]}'>
-          ${myLeads[i]}
+        <a target='_black' href='${leads[i]}'>
+          ${leads[i]}
         </a>
       </li>`;
 
@@ -51,3 +35,19 @@ function renderLeads() {
 
   ulEl.innerHTML = listItem; //innerHTML should be out of the loop for better performance.
 }
+
+deleteBtn.addEventListener("dblclick", function () {
+  localStorage.clear();
+  myLeads = [];
+  render(myLeads);
+});
+
+inputBtn.addEventListener("click", function () {
+  myLeads.push(inputEl.value);
+  inputEl.value = "";
+  myValue = JSON.stringify(myLeads);
+  localStorage.setItem("myLeads", myValue);
+  render(myLeads);
+
+  console.log(localStorage.getItem("myLeads"));
+});
