@@ -13,7 +13,11 @@ const ulEl = document.getElementById("ul-el");
 inputBtn.addEventListener("click", function () {
   myLeads.push(inputEl.value);
   inputEl.value = "";
+  myValue = JSON.stringify(myLeads);
+  localStorage.setItem("myLeads", myValue);
   renderLeads();
+
+  console.log(localStorage.getItem("myLeads"));
 });
 
 function renderLeads() {
