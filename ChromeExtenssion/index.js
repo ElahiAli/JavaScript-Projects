@@ -4,7 +4,7 @@ let myLeads = [];
 const inputEl = document.getElementById("input-el");
 const inputBtn = document.getElementById("input-btn");
 const ulEl = document.getElementById("ul-el");
-const deleteBtn = document.getElementById("delete-btn");
+let deleteBtn = document.getElementById("delete-btn");
 
 // working with localStorage:
 // localStorage.setItem(key,value)
@@ -17,7 +17,7 @@ if (leadFromLocalStorage) {
   renderLeads();
 }
 
-deleteBtn.addEventListener("dbclick", function () {
+deleteBtn.addEventListener("dblclick", function () {
   localStorage.clear();
   myLeads = [];
   renderLeads();
