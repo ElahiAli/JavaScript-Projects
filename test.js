@@ -19,3 +19,17 @@
 // myLeads.push("www.example.com");
 // myLeads = JSON.stringify(myLeads);
 // console.log(typeof myLeads);
+
+// function with parameter :
+// function g(greeting, name) {
+//   console.log(`${greeting},${name}`);
+// }
+
+// g("Hello", "Ali");
+
+// function add(a, b) {
+//   console.log(a + b);
+// }
+
+// add(3, 4);
+// add(9, 102);
