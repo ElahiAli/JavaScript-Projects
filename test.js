@@ -33,3 +33,9 @@
 
 // add(3, 4);
 // add(9, 102);
+
+// function test(array) {
+//   return array[0];
+// }
+// let firestArray = test([1, 2, , 3]);
+// console.log(firestArray);
