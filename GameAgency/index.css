@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+    color: goldenrod;
+}
+
+body {
+    text-align: center;
+}
+img {
+    border-radius: 20em;
+    width: 30%;
+    padding: 10px ;
+    margin: 10px ;
+
+}
+#container {
+    text-align: center;
+}
+
