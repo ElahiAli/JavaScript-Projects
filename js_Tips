@@ -1,0 +1,74 @@
+JS TIPS:
+
+insert script to a page:
+if the page use innerHTML for getting the scripts then it will be injected as:
+<img src onerro"alert("hacked!")">
+instead of innerHTML use the innerText.
+
+three way of loading pages in javascript:
+tip: browsers will parse the html line by line but when they get to js script they will parse all of the js first and then they will continue the html parsing.
+
+1.Normal:
+- start with HTML parsing when it reach the JS, 
+- JS will be downloaded completely,
+- JS will be executing completely,
+- then HTML parsing will continue.
+ex:
+<script src=""></script>
+
+2.Async:
+- start with HTML parsing when it reach the JS,
+- JS will be downloaded on the background with HTML parsing and as soon as JS get downloaded ,
+- before or after the HTML parsing , JS will be executing,
+- then parsing can continue if it's not done already.
+ex:
+<script async src=""></script>
+
+
+3.Defer:
+- start with HTML parsing when it reach the JS,
+- JS will be downloaded in the background with HTML,
+- and Until HTML get parse completely, JS would not get executed.
+- at the end JS will execute. 
+ex:
+script defer src=""></script>
+
+Difference between var and let:
+- scope variable
+- asign variabel(multiple time)
+- var let us create a variable affter we use it.
+
+ES6 modules:
+the main idea of this modules is to import or export from files.
+Two ways of export:
+1.default 
+2.normal
+ex:
+export default User(current object)
+export {function name,,,}
+
+tip: we can default export only one thing.for example the class of our file
+
+
+import User from 'user.js' or put the path of file
+import allow to change the name of default export stuff like: import U,{function name,functionname as fn} from ''
+
+
+ARROW FUNCTION:
+let variable name = (parameters) => number>0 , {........}
+
+JS COOKIES & LOCALSRORAGE & SESSION:
+all three store in client pc.
+localStorage
+sessionStorage 
+document.cookie = 'name=kyle; expires=' + new Date(2020, 0 , 1).toUTCString()  after semi can be removed.
+
+PROMISES in JS:
+promis takes to parameter resolve and reject.
+we can intract with promise with then and catch.
+p = new Promise((resolve, reject) => {anything...})
+Promise.race()
+Promise.all()
+
+
+ 
