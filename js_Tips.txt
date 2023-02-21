@@ -71,4 +71,45 @@ Promise.race()
 Promise.all()
 
 
+Array Method:
+filter: -> array with price more than 100
+const filteredItems = items.filter(item) => {
+    return item.price >= 100;
+}
+
+map: -> array with only price
+const filteredItems = items.map(item) => {
+    return item.price 
+}
+
  
+find: -> find single item in array
+const filteredItems = items.find(item) => {
+    return item.name == 'book'
+}
+
+foreach: -> like for loop (taking only the name here)
+items.foreach(item) => {
+    console.log(item.price)
+}
+
+some: -> return True or False (here check the price more then 100)
+const hasexpensiveItem = items.some(item) => {
+    return item.price > 100
+}
+
+every: -> return True or False (check all the items less than 100)
+const hasInexpensiveItem = items.every(item) => {
+    return item.price <= 100
+}
+
+reduce: -> do some operation (getting the total price here)
+const total = items.reduce((currentTotal,item) => {
+    return item.price + currentTotal
+},0) -> 0 is the starting point.
+
+include: -> return True or False (check the value exist in array or not)
+const includesTwo = items.includes(2) 
+
+
+Async and Await:
