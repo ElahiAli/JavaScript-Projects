@@ -113,3 +113,4 @@ const includesTwo = items.includes(2)
 
 
 Async and Await:
+await will wait until the job get done then would go on.
