@@ -54,7 +54,6 @@ const calculator = new Calculator(
 nubmerButtons.forEach((button) => {
   button.addEventListener("click", () => {
     calculator.appendNumber(button.innerText);
-    console.log(button.innerText);
     calculator.updateDisplay();
   });
 });
@@ -64,4 +63,9 @@ operationButtons.forEach((button) => {
     calculator.chooseOperation(button.innerText);
     calculator.updateDisplay();
   });
+});
+
+equalsButton.addEventListener("click", (button) => {
+  calculator.compute();
+  calculator.updateDisplay();
 });
