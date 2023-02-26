@@ -115,3 +115,12 @@ const includesTwo = items.includes(2)
 Async and Await:
 await will wait until the job get done then would go on.
 
+Path By Value OR Path By Reference:
+value =>    a = 10;  c = a  //boolean int string 
+reference =>   c = a + 1, d = [1,2]   // object array class 
+
+
+How to Fetch API in JAVASCRIPT:
+fetch is a promis function it's mean than we can use then and catch methods or use async on it.
+
+ 
