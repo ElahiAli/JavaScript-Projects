@@ -140,3 +140,17 @@ rusult = if (number===0) ? 'you have nothing' : {
     elif condition      true mode               else mode
     if (number < 10) ? 'you have very little' : 'you have a lot'
 }
+
+Dom:
+up to down:
+getElementById -> only one element
+getElementByClassName
+querySelector -> first element
+querySelectorAll -> all the elements
+
+down to up:
+closest()
+
+side to side:
+nextElementSibling()
+previousElemetSibiling()
