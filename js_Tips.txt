@@ -122,5 +122,21 @@ reference =>   c = a + 1, d = [1,2]   // object array class
 
 How to Fetch API in JAVASCRIPT:
 fetch is a promis function it's mean than we can use then and catch methods or use async on it.
-
  
+Closures:
+it means that every scope has access to other scope for example a function that has access to a variabel out of the function.
+in js anything has access to outer scope as it's parent scope.
+
+
+Ternary operation:
+        if condition    true mode       else mode
+result = number >= 60 ? "it's ok" : "it's not ok"
+
+the tip here is to get result from the Ternary operation but if our operation dont have any result it's better to use if else condition.
+
+this tenary is not recommanded:(dont use nested Ternary)
+        if condition        true mode 
+rusult = if (number===0) ? 'you have nothing' : {
+    elif condition      true mode               else mode
+    if (number < 10) ? 'you have very little' : 'you have a lot'
+}
