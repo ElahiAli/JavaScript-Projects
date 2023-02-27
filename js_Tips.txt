@@ -187,3 +187,9 @@ null means that the thing exist but there is nothing in it.
 Undefined means that the thing doesn't exist yet.
 
 
+Dynamic Import:
+if (user.admin){
+    import("./admins.js").then(({setupAdminUser}) =>{
+    setupAdminUser();
+    })
+}
