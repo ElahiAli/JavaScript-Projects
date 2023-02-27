@@ -164,3 +164,21 @@ normaly capture is false but we can pass the parameter (capture=true) to the eve
 capture is a third parameter
 {once:true} is a third parameter to eventListener too , function will excute only one time
 e.target.matches(selector)   access the target in document
+
+Cool Feature:
+?? it will be use instead of || (OR) so it will check the value if its not null then would return it other wise would return other value
+taxes = taxes ?? 0.85
+
+%c in the second parameter in js we can put our css style.
+console.log(`%c${description} with tax: %c${total}`,
+"font-weight:bold", second parameter for the first %c 
+"color":"green") for the second %c
+
+? this will check that the value or the function exist or not then it will continue ot in anythin else like cut [0].
+console.log(person?.address?.street)
+kyle.printName?.()
+
+if our object have some variable that it's name and value are the same it can be write like this:
+const home = {house:house,door:door} instead => const home = {house,door}
+
+
