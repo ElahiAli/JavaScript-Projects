@@ -197,3 +197,4 @@ if (user.admin){
 
 Reshape thinking about functions:
 function is an object that can be called.
+we pass the function name as variable to anything
