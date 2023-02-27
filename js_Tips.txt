@@ -182,3 +182,8 @@ if our object have some variable that it's name and value are the same it can be
 const home = {house:house,door:door} instead => const home = {house,door}
 
 
+Null and Undefined:
+null means that the thing exist but there is nothing in it.
+Undefined means that the thing doesn't exist yet.
+
+
