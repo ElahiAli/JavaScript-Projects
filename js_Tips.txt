@@ -154,3 +154,13 @@ closest()
 side to side:
 nextElementSibling()
 previousElemetSibiling()
+
+
+Events:
+bubbling -> inside to outside 
+capture -> outside to inside
+
+normaly capture is false but we can pass the parameter (capture=true) to the event listener.
+capture is a third parameter
+{once:true} is a third parameter to eventListener too , function will excute only one time
+e.target.matches(selector)   access the target in document
