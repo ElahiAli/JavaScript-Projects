@@ -193,3 +193,7 @@ if (user.admin){
     setupAdminUser();
     })
 }
+
+
+Reshape thinking about functions:
+function is an object that can be called.
