@@ -197,4 +197,11 @@ if (user.admin){
 
 Reshape thinking about functions:
 function is an object that can be called.
-we pass the function name as variable to anything
+we pass the function name as variable to anything 
+
+Node and Element:
+anything in HTML is Node 
+element is special node.
+NodeList might return anything as Node but HTMLCollection will only return an element.
+
+
