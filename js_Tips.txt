@@ -1,51 +1,51 @@
 JS TIPS:
 
 insert script to a page:
-if the page use innerHTML for getting the scripts then it will be injected as:
-<img src onerro"alert("hacked!")">
-instead of innerHTML use the innerText.
+ if the page use innerHTML for getting the scripts then it will be injected as:
+ <img src onerro"alert("hacked!")">
+ instead of innerHTML use the innerText.
 
 three way of loading pages in javascript:
-tip: browsers will parse the html line by line but when they get to js script they will parse all of the js first and then they will continue the html parsing.
+ tip: browsers will parse the html line by line but when they get to js script they will parse all of the js first and then they will continue the html parsing.
 
 1.Normal:
-- start with HTML parsing when it reach the JS, 
-- JS will be downloaded completely,
-- JS will be executing completely,
-- then HTML parsing will continue.
-ex:
-<script src=""></script>
+ - start with HTML parsing when it reach the JS, 
+ - JS will be downloaded completely,
+ - JS will be executing completely,
+ - then HTML parsing will continue.
+ ex:
+ <script src=""></script>
 
 2.Async:
-- start with HTML parsing when it reach the JS,
-- JS will be downloaded on the background with HTML parsing and as soon as JS get downloaded ,
-- before or after the HTML parsing , JS will be executing,
-- then parsing can continue if it's not done already.
-ex:
-<script async src=""></script>
+ - start with HTML parsing when it reach the JS,
+ - JS will be downloaded on the background with HTML parsing and as soon as JS get downloaded ,
+ - before or after the HTML parsing , JS will be executing,
+ - then parsing can continue if it's not done already.
+ ex:
+ <script async src=""></script>
 
 
 3.Defer:
-- start with HTML parsing when it reach the JS,
-- JS will be downloaded in the background with HTML,
-- and Until HTML get parse completely, JS would not get executed.
-- at the end JS will execute. 
-ex:
-script defer src=""></script>
+ - start with HTML parsing when it reach the JS,
+ - JS will be downloaded in the background with HTML,
+ - and Until HTML get parse completely, JS would not get executed.
+ - at the end JS will execute. 
+ ex:
+ script defer src=""></script>
 
 Difference between var and let:
-- scope variable
-- asign variabel(multiple time)
-- var let us create a variable affter we use it.
+ - scope variable
+ - asign variabel(multiple time)
+ - var let us create a variable affter we use it.
 
 ES6 modules:
-the main idea of this modules is to import or export from files.
-Two ways of export:
-1.default 
-2.normal
-ex:
-export default User(current object)
-export {function name,,,}
+ the main idea of this modules is to import or export from files.
+ Two ways of export:
+ 1.default 
+ 2.normal
+ ex:
+ export default User(current object)
+ export {function name,,,}
 
 tip: we can default export only one thing.for example the class of our file
 
@@ -55,110 +55,110 @@ import allow to change the name of default export stuff like: import U,{function
 
 
 ARROW FUNCTION:
-let variable name = (parameters) => number>0 , {........}
+ let variable name = (parameters) => number>0 , {........}
 
 JS COOKIES & LOCALSRORAGE & SESSION:
-all three store in client pc.
-localStorage
-sessionStorage 
-document.cookie = 'name=kyle; expires=' + new Date(2020, 0 , 1).toUTCString()  after semi can be removed.
+ all three store in client pc.
+ localStorage
+ sessionStorage 
+ document.cookie = 'name=kyle; expires=' + new Date(2020, 0 , 1).toUTCString()  after semi can be removed.
 
 PROMISES in JS:
-promis takes to parameter resolve and reject.
-we can intract with promise with then and catch.
-p = new Promise((resolve, reject) => {anything...})
-Promise.race()
-Promise.all()
+ promis takes to parameter resolve and reject.
+ we can intract with promise with then and catch.
+ p = new Promise((resolve, reject) => {anything...})
+ Promise.race()
+ Promise.all()
 
 
 Array Method:
-filter: -> array with price more than 100
-const filteredItems = items.filter(item) => {
+ filter: -> array with price more than 100
+ const filteredItems = items.filter(item) => { 
     return item.price >= 100;
-}
+ }
 
-map: -> array with only price
-const filteredItems = items.map(item) => {
+ map: -> array with only price
+ const filteredItems = items.map(item) => { 
     return item.price 
-}
+ }
 
  
-find: -> find single item in array
-const filteredItems = items.find(item) => {
+ find: -> find single item in array
+ const filteredItems = items.find(item) => { 
     return item.name == 'book'
-}
+ }
 
-foreach: -> like for loop (taking only the name here)
-items.foreach(item) => {
+ foreach: -> like for loop (taking only the name here)
+ items.foreach(item) => { 
     console.log(item.price)
-}
+ }
 
-some: -> return True or False (here check the price more then 100)
-const hasexpensiveItem = items.some(item) => {
+ some: -> return True or False (here check the price more then 100)
+ const hasexpensiveItem = items.some(item) => { 
     return item.price > 100
-}
+ }
 
-every: -> return True or False (check all the items less than 100)
-const hasInexpensiveItem = items.every(item) => {
+ every: -> return True or False (check all the items less than 100)
+ const hasInexpensiveItem = items.every(item) => { 
     return item.price <= 100
-}
+ }
 
-reduce: -> do some operation (getting the total price here)
-const total = items.reduce((currentTotal,item) => {
-    return item.price + currentTotal
-},0) -> 0 is the starting point.
+ reduce: -> do some operation (getting the total price here)
+ const total = items.reduce((currentTotal,item) => {
+     return item.price + currentTotal
+ },0) -> 0 is the starting point.
 
-include: -> return True or False (check the value exist in array or not)
-const includesTwo = items.includes(2) 
+ include: -> return True or False (check the value exist in array or not)
+ const includesTwo = items.includes(2) 
 
 
 Async and Await:
-await will wait until the job get done then would go on.
+ await will wait until the job get done then would go on.
 
 Path By Value OR Path By Reference:
-value =>    a = 10;  c = a  //boolean int string 
-reference =>   c = a + 1, d = [1,2]   // object array class 
+ value =>    a = 10;  c = a  //boolean int string 
+ reference =>   c = a + 1, d = [1,2]   // object array class 
 
 
 How to Fetch API in JAVASCRIPT:
-fetch is a promis function it's mean than we can use then and catch methods or use async on it.
+ fetch is a promis function it's mean than we can use then and catch methods or use async on it.
  
 Closures:
-it means that every scope has access to other scope for example a function that has access to a variabel out of the function.
-in js anything has access to outer scope as it's parent scope.
+ it means that every scope has access to other scope for example a function that has access to a variabel out of the function.
+ in js anything has access to outer scope as it's parent scope.
 
 
 Ternary operation:
         if condition    true mode       else mode
-result = number >= 60 ? "it's ok" : "it's not ok"
+ result = number >= 60 ? "it's ok" : "it's not ok"
 
-the tip here is to get result from the Ternary operation but if our operation dont have any result it's better to use if else condition.
+ the tip here is to get result from the Ternary operation but if our operation dont have any result it's better to use if else condition.
 
-this tenary is not recommanded:(dont use nested Ternary)
+ this tenary is not recommanded:(dont use nested Ternary)
         if condition        true mode 
-rusult = if (number===0) ? 'you have nothing' : {
+ rusult = if (number===0) ? 'you have nothing' : {
     elif condition      true mode               else mode
     if (number < 10) ? 'you have very little' : 'you have a lot'
-}
+ }
 
 Dom:
-up to down:
-getElementById -> only one element
-getElementByClassName
-querySelector -> first element
-querySelectorAll -> all the elements
+ up to down:
+ getElementById -> only one element
+ getElementByClassName
+ querySelector -> first element
+ querySelectorAll -> all the elements
 
-down to up:
-closest()
+ down to up:
+  closest()
 
-side to side:
-nextElementSibling()
-previousElemetSibiling()
+ side to side:
+  nextElementSibling()
+  previousElemetSibiling()
 
 
 Events:
-bubbling -> inside to outside 
-capture -> outside to inside
+ bubbling -> inside to outside 
+ capture -> outside to inside
 
 normaly capture is false but we can pass the parameter (capture=true) to the event listener.
 capture is a third parameter
@@ -166,58 +166,65 @@ capture is a third parameter
 e.target.matches(selector)   access the target in document
 
 Cool Feature:
-?? it will be use instead of || (OR) so it will check the value if its not null then would return it other wise would return other value
-taxes = taxes ?? 0.85
+ ?? it will be use instead of || (OR) so it will check the value if its not null then would return it other wise would return other value
+ taxes = taxes ?? 0.85
 
-%c in the second parameter in js we can put our css style.
-console.log(`%c${description} with tax: %c${total}`,
-"font-weight:bold", second parameter for the first %c 
-"color":"green") for the second %c
+ %c in the second parameter in js we can put our css style.
+ console.log(`%c${description} with tax: %c${total}`,
+ "font-weight:bold", second parameter for the first %c 
+ "color":"green") for the second %c
 
-? this will check that the value or the function exist or not then it will continue ot in anythin else like cut [0].
-console.log(person?.address?.street)
-kyle.printName?.()
+ ? this will check that the value or the function exist or not then it will continue ot in anythin else like cut [0].
+ console.log(person?.address?.street)
+ kyle.printName?.()
 
-if our object have some variable that it's name and value are the same it can be write like this:
-const home = {house:house,door:door} instead => const home = {house,door}
+ if our object have some variable that it's name and value are the same it can be write like this:
+ const home = {house:house,door:door} instead => const home = {house,door}
 
 
 Null and Undefined:
-null means that the thing exist but there is nothing in it.
-Undefined means that the thing doesn't exist yet.
+ null means that the thing exist but there is nothing in it.
+ Undefined means that the thing doesn't exist yet.
 
 
 Dynamic Import:
-if (user.admin){
-    import("./admins.js").then(({setupAdminUser}) =>{
-    setupAdminUser();
+ if (user.admin){
+     import("./admins.js").then(({setupAdminUser}) =>{
+     setupAdminUser();
     })
-}
+ }
 
 
 Reshape thinking about functions:
-function is an object that can be called.
-we pass the function name as variable to anything 
+ function is an object that can be called.
+ we pass the function name as variable to anything 
 
 Node and Element:
-anything in HTML is Node 
-element is special node.
-NodeList might return anything as Node but HTMLCollection will only return an element.
+ anything in HTML is Node 
+ element is special node.
+ NodeList might return anything as Node but HTMLCollection will only return an element.
 
 
 isNan() -> is number or not
 
 
 Hoisting:
-js will move the function to the top of the file then will excute it. it's only work on key function(normal) not arrow function.
+ js will move the function to the top of the file then will excute it. it's only work on key function(normal) not arrow function.
 
 
 Scopes:
-1.Global
-2.module
-3.function
-4.block
+ 1.Global (we can use window.someVariable)
+ 2.module
+ 3.function
+ 4.block
 
 
 what is strict mode?
+ way of use:
+ use "use strict" in top of the any file
+ use "use strict" in top of a function so all the code in function will use it.
+ class already use the strict mode as it's auto mode.
+ using modules (automatic strict mode)
+
+ pervent us to write code with bug in it.
  
