@@ -6,7 +6,8 @@ insert script to a page:
  instead of innerHTML use the innerText.
 
 three way of loading pages in javascript:
- tip: browsers will parse the html line by line but when they get to js script they will parse all of the js first and then they will continue the html parsing.
+ tip: browsers will parse the html line by line but when they get to js script, 
+ they will parse all of the js first and then they will continue the html parsing.
 
 1.Normal:
  - start with HTML parsing when it reach the JS, 
@@ -132,7 +133,8 @@ Ternary operation:
         if condition    true mode       else mode
  result = number >= 60 ? "it's ok" : "it's not ok"
 
- the tip here is to get result from the Ternary operation but if our operation dont have any result it's better to use if else condition.
+ the tip here is to get result from the Ternary operation but if our operation dont have any result,
+  it's better to use if else condition.
 
  this tenary is not recommanded:(dont use nested Ternary)
         if condition        true mode 
@@ -160,10 +162,10 @@ Events:
  bubbling -> inside to outside 
  capture -> outside to inside
 
-normaly capture is false but we can pass the parameter (capture=true) to the event listener.
-capture is a third parameter
-{once:true} is a third parameter to eventListener too , function will excute only one time
-e.target.matches(selector)   access the target in document
+ normaly capture is false but we can pass the parameter (capture=true) to the event listener.
+ capture is a third parameter
+ {once:true} is a third parameter to eventListener too , function will excute only one time
+ e.target.matches(selector)   access the target in document
 
 Cool Feature:
  ?? it will be use instead of || (OR) so it will check the value if its not null then would return it other wise would return other value
@@ -209,7 +211,8 @@ isNan() -> is number or not
 
 
 Hoisting:
- js will move the function to the top of the file then will excute it. it's only work on key function(normal) not arrow function.
+ js will move the function to the top of the file then will excute it. it's only work on key function(normal),
+ not arrow function.
 
 
 Scopes:
