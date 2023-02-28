@@ -47,11 +47,11 @@ ES6 modules:
  export default User(current object)
  export {function name,,,}
 
-tip: we can default export only one thing.for example the class of our file
+ tip: we can default export only one thing.for example the class of our file
 
 
-import User from 'user.js' or put the path of file
-import allow to change the name of default export stuff like: import U,{function name,functionname as fn} from ''
+ import User from 'user.js' or put the path of file
+ import allow to change the name of default export stuff like: import U,{function name,functionname as fn} from ''
 
 
 ARROW FUNCTION:
@@ -228,3 +228,5 @@ what is strict mode?
 
  pervent us to write code with bug in it.
  
+
+
