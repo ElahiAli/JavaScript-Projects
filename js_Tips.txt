@@ -230,6 +230,10 @@ what is strict mode?
  using modules (automatic strict mode)
 
  pervent us to write code with bug in it.
+
+
+Weather App:
+npm create vite@latest
  
 
 
