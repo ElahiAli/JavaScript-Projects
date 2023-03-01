@@ -233,7 +233,9 @@ what is strict mode?
 
 
 Weather App:
-npm create vite@latest
- 
+ -npm create vite@latest
+ -npm i axios   -> fetching library make it easier.
+ {params: {let:let,...}} -> defining all our query in js.
 
-
+               value:key
+ tip ->   const {lat:lot} = current_latlot
