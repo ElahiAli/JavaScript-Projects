@@ -1,0 +1,40 @@
+IMPORT - EXPORT:
+ usign require key for import stuff.
+ module.export = {,,,,,}
+
+EventEmitter:
+ const EventEmitter = require('events)
+ const eventEmitter = new EventEmitter()
+
+ eventEmitter.on('tutorial',()=>{
+     console.log("tutorial excuted")
+ })
+
+ eventEmitter.emit('tutorial');
+
+ or we can use it on a object like;
+ 
+ class person extends EventEmitter{
+    constructor(name){
+        super(),
+        this._name = name
+    }
+
+    get name(){
+        return this._name
+    }
+ }
+
+ let p = new person("ali")
+ p.on("name",()=>{
+    console.log(p.name)
+ })
+ p.emit("name")
+
+ReadLine Module:
+ need to import 
+ it will be use for getting input from user.
+ rl.question(string, function)
+ rl.setPrompt(string)
+ rl.prompt()
+ rl.close()
