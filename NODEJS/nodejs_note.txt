@@ -48,11 +48,14 @@ FileSystem Module:
  fs.mkdir(filename,function)        => create a folder
  fs.rmdir(filename,function)        => delete a folder
  fs.readdir(filename,function)      => read all the files in a folder
- fs.createReadStream(filename,type) => read file(asign to a variable) 
- fs.createWriteStream(filename)     => write file(asign to a variable)
+ 
 
  tip: for deleting a not empty folder, first we need to delete the file or folder inside it.
 
  Working With Readable And Writable Streams:
-  
+  fs.createReadStream(filename,type) => read file(asign to a variable) 
+  fs.createWriteStream(filename)     => write file(asign to a variable)
 
+Pipes And Pipe Chaining:
+ pipe will read a file and would write it to anyother file
+ readStream.pipe(writeStream)
