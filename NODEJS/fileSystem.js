@@ -30,3 +30,11 @@ fs.unlink("test.txt", (err) => {
   if (err) console.log(err);
   else console.log("file deleted.");
 });
+
+//createReadStream
+//createWriteSteam
+const writeStream = fs.createWriteStream("largefile.txt");
+const readStream = fs.createReadStream("largefile.txt", "utf8");
+readStream.on("data", (chunk) => {
+  console.log(chunk);
+});

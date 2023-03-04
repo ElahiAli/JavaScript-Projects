@@ -40,14 +40,18 @@ ReadLine Module:
  rl.close()
 
 FileSystem Module:
- fs.writeFile                   => create file and add data
- fs.readFile                    => read file    
- fs.rename                      => rename file
- fs.appendFile                  => append new data to file
- fs.unlink                      => delete a file
- fs.mkdir(filename,function)    => create a folder
- fs.rmdir(filename,function)    => delete a folder
- fs.readdir(filename,function)  => read all the files in a folder
-  
+ fs.writeFile                       => create file and add data
+ fs.readFile                        => read file    
+ fs.rename                          => rename file
+ fs.appendFile                      => append new data to file
+ fs.unlink                          => delete a file
+ fs.mkdir(filename,function)        => create a folder
+ fs.rmdir(filename,function)        => delete a folder
+ fs.readdir(filename,function)      => read all the files in a folder
+ fs.createReadStream(filename,type) => read file(asign to a variable) 
+ fs.createWriteStream(filename)     => write file(asign to a variable)
+
  tip: for deleting a not empty folder, first we need to delete the file or folder inside it.
 
+ Working With Readable And Writable Streams:
+  
