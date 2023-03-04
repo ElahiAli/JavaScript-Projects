@@ -1,0 +1,190 @@
+Commnet: //
+
+Data Type:
+undefined: a variable that has not been defined.
+null: nothing
+boolean:, string, number
+symbol: is an immutable primitive value that is uniqe 
+object: is key-value per.
+
+Variable: 
+var is use in hole program(global).
+let is just use in the specific scope.
+const it can't never change.
+
+Storing value with Assignment Operator:
+var a; -> declaring
+a = 11 -> Assign
+var b=11; -> Declar and Assign
+
+console.log(a) -> print(a) 
+
+Tip: we can use "+" and "+=" for adding two or more string.it is casesensetive.
+
+Working with Number:
+var sum = 10+10;
+var difference = 45-33;
+var product = 8*3;
+var quotient = 66/33;
+var remainder = 11%3; ->even and odd can be known.
+
+Working with String:
+var name = "ali";
+
+Scape a Quote:
+using \ will not count "" in the string and print all of them.
+'' this are work in js.
+
+++ -- += -= *= /= work in js.
+
+Finding length:
+var firstName = "Ada";
+firstName.length; -> .length give us the length of string or ...
+
+Cut or Indexing:
+var firstName = "Ada";
+index start from 0.
+firstLetterOfFirstName = firstName[0];
+string is immutable can't be change by one letter so need to be replace
+var a = "ali";
+a[0] = "o"; -> wrong
+a = "oli"; -> true
+
+Function:
+function wordBlanks(v1, v2, v3){
+	....
+	....
+}
+console.log(wordBlanks(v1, v2, v3));
+
+Array and nested Array -> no difference:
+adding and removing element to/from end of array with "push()" and "pop()" -> arrayname.push(element) ;  arrayname.pop()
+"shift()" -> remove the first element from array. arrayname.shift()
+"unshift()" -> add item to begining of array. arrayname.unshift(element)
+
+tip: 
+typeof variablename -> give variable type.
+function has return in js.
+
+queue is []. add to end with "push" and and extract from begining with "shift".
+
+= -> sign variable ; == -> convert type and compare ; === ->just compare No convert.
+!= -> convert type and compare ; !== ->just compare No convert.
+less and grater or than are the same(python).
+&& -> and Operator ; || -> or Operator
+
+if(){} ; else{} ; else if(){} ; 										 //	same output with swich statement:
+swich(element){        									                                                     swich(element){
+	case 1:																		case a:
+		.....																	case b:
+		break;																	case c:
+	case 2:																			answer = "low";
+		.....																		break;
+		break;																	case v:	
+	default:																	case r:
+		.....																		answer = "high";
+		break;																		breake;
+} -> case .1. will be compare to element in swich.												}
+
+Object: 
+are key-value(properties-value) just like python.
+call the key -> .keyname && [keyname]
+update the object -> object.keyname = newname
+add new key to object -> object.newkeyname = newkeyvalue ; object[newkeyname] = newkeyvalue
+delete key in object -> delete object.keyname
+
+tip:
+Object can be use instead of switch.
+object's key can test with "object.hasOwnProperty()" it would return boolean.
+
+
+While loop is just like python.
+for is like solidity.
+
+do{
+	....
+}while(....)   -> first run then check the condition.
+
+
+Random decimal number:
+"Math.random()" return random number between 0 and 1.
+"Math.floor(Math.random())" return random integer number.
+
+parseInt(str) -> convert string to integer
+more option :
+we can pass the base to parseInt -> parseInt(str,2) the second parameter is the base that here is the binary, we're going to convert binary string to integer.
+
+Ternary Operator:
+condition ? statement-if-true : statement-if-false
+
+Multi Ternary:
+condition ? statement-if-true : condition ? statement-if-true : condition ? statement-if-true :statement-if-false
+
+let and var:
+with let we can't change variable name with it's declaration -> let name = "ali"  can't be  let name = "homan"
+but  let name = "ali"  can change to name = "ali"  it's just signing another name.
+*tip*: let is block scope but var is global -> if we declar a let in {} out of this scope it's not gonna work
+const -> ReadOnly variable.
+in const if we have an array we can change the values with cut [] -> arrayname[0] = newvalue.
+if we dont, anything to change, we can use "Object.freeze(variablename)".
+
+
+"use strict";  -> top of the js file for showing mistake like forgotting to put var or let.
+
+try{}catch(){}
+
+Arrow Function:
+const magic = () => new Date();
+
+parameter in Arrow Function:
+const myConcat = (arr1, arr2) => arr1.concat(arr2); //concat is used to merge the arr2 with arr1
+
+(...args) the three "." is the rest Operator 
+const sum = (function(){
+	return function sum(...args){
+		return args.reduse((a,b) => a + b, 0);
+	};
+})();
+
+this function "sum" can take too many variable -> console.log(sum(1,2,3,4,5))
+it return it as array.
+ 
+[...args] it's used as expand Operator .
+
+
+this is some kind of Assignment: 
+destructuring -> const AVG_TEMPERATURES{today:77.9,tomorrow:79}
+function ....{
+	const {tomorrow : newvariable} = arrayname(AVG_TEMPERATURES)
+}
+
+
+destructuring(nested object):
+const LOCAL_FORECAST ={
+	today: {min: 72, max: 84.4},
+	tomorrow: {min: 73.3, max: 86.4}
+}
+
+function getMaxOfTmrw(forecast){
+	const {tomorrow : {max : maxOfTomorrow}} = forecast;
+	return  maxOfTomorrow;
+}
+console.log(getMaxOfTmrw(LOCAL_FORECAST));
+
+in the object:
+setGear : function(newGear) -> setGear(newGear)
+
+syntax "class" would bring the "constructor(parameter)" 
+
+import and export and require:
+
+import { functionname } from "./file path or name"
+export variable ; export{functionname}; then can be imported.
+import * as capitalizeString from "filename"; -> import everything.
+
+export one thing from file:
+export default ....
+
+import default export:
+import subtract from "filename" 
+
