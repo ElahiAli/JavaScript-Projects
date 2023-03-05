@@ -56,6 +56,7 @@ FileSystem Module:
   fs.createReadStream(filename,type) => read file(asign to a variable) 
   fs.createWriteStream(filename)     => write file(asign to a variable)
 
-Pipes And Pipe Chaining:
- pipe will read a file and would write it to anyother file
- readStream.pipe(writeStream)
+ Pipes And Pipe Chaining:
+  pipe will read a file and would write it to anyother file
+  readStream.pipe(writeStream)
+
