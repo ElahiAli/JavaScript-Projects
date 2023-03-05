@@ -66,3 +66,7 @@ Creating package.json using npm init:
 NPM:
 npm i packageName
 npm uninstall packageName
+
+Express:
+ npm init --yes
+ npm install express
