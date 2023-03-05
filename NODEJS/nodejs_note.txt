@@ -60,3 +60,9 @@ FileSystem Module:
   pipe will read a file and would write it to anyother file
   readStream.pipe(writeStream)
 
+Creating package.json using npm init:
+ npm init
+
+NPM:
+npm i packageName
+npm uninstall packageName
